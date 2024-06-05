@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    gap: 20px 30px;
+    gap: 20px 10px;
     justify-content: space-between;
   }
 
@@ -33,29 +33,50 @@
     width: 24px;
     height: 24px;
     left: 0;
+    background-size: contain;
   }
 
   &--start::before {
-    background-image: url("../image/icon-amanita.png");
+    background-image: url("../image/decorative-images/icon-amanita.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../image/decorative-images/icon-amanita@2x.png");
+    }
   }
 
   &--about-me::before {
-    background-image: url("../image/icon-blueberries.png");
+    background-image: url("../image/decorative-images/icon-blueberries.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../image/decorative-images/icon-blueberries@2x.png");
+    }
   }
 
   &--education::before {
-    background-image: url("../image/icon-goji.png");
+    background-image: url("../image/decorative-images/icon-goji.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../image/decorative-images/icon-goji@2x.png");
+    }
   }
 
   &--skills::before {
-    background-image: url("../image/icon-mushroom-2.png");
+    background-image: url("../image/decorative-images/icon-mushroom.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../image/decorative-images/icon-mushroom@2x.png");
+    }
   }
 
   &--experience::before {
-    background-image: url("../image/icon-berries.png");
+    background-image: url("../image/decorative-images/icon-berries.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../image/decorative-images/icon-berries@2x.png");
+    }
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 25px;
+    font-size: 22px;
   }
 }

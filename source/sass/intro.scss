@@ -1,13 +1,29 @@
 .intro {
   position: relative;
   min-height: 525px;
-  background: url("../image/index-background-tablet.png") no-repeat;
+  background: url("../image/decorative-images/index-background-tablet.png")
+    no-repeat;
   background-position: 71% -72%;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../image/decorative-images/index-background-tablet@2x.png")
+      no-repeat;
+    background-position: 71% -72%;
+    background-size: cover;
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 730px;
-    background: url("../image/index-background-desktop.png") no-repeat;
-    background-position: 31% 0;
+    background: url("../image/decorative-images/index-background-desktop.png")
+      no-repeat;
+    background-position: 60% 0;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../image/decorative-images/index-background-desktop@2x.png")
+        no-repeat;
+      background-position: 60% 0;
+      background-size: cover;
+    }
   }
 
   @media (min-width: $desktop-width) {
