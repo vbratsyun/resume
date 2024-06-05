@@ -1,0 +1,12 @@
+.main {
+  flex-grow: 1;
+}
+
+.main__intro,
+.main__portfolio {
+  margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 40px;
+  }
+}

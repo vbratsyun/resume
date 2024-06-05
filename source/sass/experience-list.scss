@@ -1,0 +1,28 @@
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.experience-list__title {
+  font-weight: 300;
+}
+
+.experience-list__tasks-list,
+.experience-list__progress-list {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.experience-list__link {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: $text-black-color;
+  text-indent: 1rem;
+}

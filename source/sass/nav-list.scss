@@ -1,0 +1,61 @@
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 20px 30px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1320px;
+  }
+}
+
+.nav-list__item {
+  text-align: center;
+}
+
+.nav-list__link {
+  position: relative;
+  font-size: 25px;
+  color: $title-color;
+  font-weight: 400;
+  padding-left: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 0;
+  }
+
+  &--start::before {
+    background-image: url("../image/icon-amanita.png");
+  }
+
+  &--about-me::before {
+    background-image: url("../image/icon-blueberries.png");
+  }
+
+  &--education::before {
+    background-image: url("../image/icon-goji.png");
+  }
+
+  &--skills::before {
+    background-image: url("../image/icon-mushroom-2.png");
+  }
+
+  &--experience::before {
+    background-image: url("../image/icon-berries.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+  }
+}
