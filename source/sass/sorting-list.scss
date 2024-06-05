@@ -1,0 +1,84 @@
+.sorting-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.sorting-list__item {
+  @media (min-width: $desktop-width) {
+    &--marron {
+      order: 1;
+    }
+
+    &--mishka {
+      order: 2;
+    }
+
+    &--pink {
+      order: 3;
+    }
+
+    &--global {
+      order: 4;
+    }
+
+    &--kekstagram {
+      order: 5;
+    }
+
+    &--kasmir {
+      order: 6;
+    }
+
+    &--device {
+      order: 7;
+    }
+
+    &--cat-energy {
+      order: 8;
+    }
+
+    &--sedona {
+      order: 9;
+    }
+
+    &--offerrum {
+      order: 10;
+    }
+
+    &--spshop {
+      order: 11;
+    }
+
+    &--gussi {
+      order: 12;
+    }
+  }
+}
+
+.sorting-list__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.sorting-list__title {
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 20px auto 0;
+    max-width: 280px;
+  }
+}

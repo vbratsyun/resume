@@ -1,0 +1,24 @@
+.about-me {
+  padding-top: 20px;
+}
+
+.about-me__link {
+  display: block;
+  float: right;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid $white-text;
+  outline: 3px solid #bfdd5c;
+  margin: 0 6px;
+  background: url("../image/avatar.jpg") no-repeat;
+  background-position: 50% 36%;
+  background-size: 349%;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+  }
+}

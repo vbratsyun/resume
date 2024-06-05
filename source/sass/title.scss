@@ -1,0 +1,11 @@
+.title {
+  font-size: 24px;
+  font-weight: 400;
+  color: $title-color;
+  text-indent: initial;
+  margin: 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 40px;
+  }
+}

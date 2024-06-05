@@ -1,0 +1,22 @@
+.portfolio {
+  @media (min-width: $desktop-width) {
+    max-width: 1320px;
+  }
+}
+
+.portfolio__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.portfolio__title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.portfolio__sorting-type {
+  margin-bottom: 40px;
+}

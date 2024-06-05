@@ -1,0 +1,21 @@
+.info {
+  font-size: 17px;
+  text-indent: 1rem;
+  background-color: #c7d984;
+  padding-bottom: 50px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.info__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+}
