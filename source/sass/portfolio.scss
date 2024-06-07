@@ -7,16 +7,26 @@
 .portfolio__container {
   @media (min-width: $tablet-width) {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 50px;
   }
 }
 
 .portfolio__title {
   font-size: 30px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio__sorting-type {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }

@@ -8,8 +8,8 @@
     <meta name="keywords" content="резюме, html-верстальщик, web-разработка" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
-  <body class="page__body body">
-    <header class="body__header header wrapper">
+  <body class="page__body">
+    <header class="body__header header">
       <nav class="header__nav nav">
         <ul class="nav__list nav-list list">
           <li class="nav-list__item">
@@ -22,35 +22,34 @@
           <li class="nav-list__item">
             <a
               class="nav-list__link nav-list__link--about-me link"
-              href="info.html#about-me"
+              href="#about-me"
               >О себе</a
             >
           </li>
           <li class="nav-list__item">
             <a
               class="nav-list__link nav-list__link--education link"
-              href="info.html#education"
+              href="#education"
               >Образование</a
             >
           </li>
           <li class="nav-list__item">
-            <a
-              class="nav-list__link nav-list__link--skills link"
-              href="info.html#skills"
+            <a class="nav-list__link nav-list__link--skills link" href="#skills"
               >Навыки</a
             >
           </li>
           <li class="nav-list__item">
             <a
               class="nav-list__link nav-list__link--experience link"
-              href="info.html#experience"
+              href="#experience"
               >Опыт работы</a
             >
           </li>
         </ul>
       </nav>
     </header>
-    <main class="body__info info">
+
+    <main class="main info">
       <div class="info__container wrapper">
         <h1 class="visually-hidden">Информация о Брацюн Виктории</h1>
         <section class="about-me" id="about-me">
@@ -62,8 +61,8 @@
           </a>
           <h2 class="title">О себе</h2>
           <p>
-            Меня зовут Виктория, увлекаюсь HTML-версткой последних 4 года,
-            первый сайт сделала в 2020.
+            Меня зовут Виктория, увлекаюсь HTML-версткой последних 3 года,
+            первый сайт сделала в 2021.
           </p>
           <p>
             Б<strong>о</strong>льшую часть карьеры работала в сфере образования,
@@ -121,7 +120,8 @@
           <ul class="experience-list list">
             <li class="experience-list__item">
               <h3 class="experience-list__title title">
-                14 февраля 2023 года → 17 апреля 2023 года
+                14 февраля 2023 года →<br class="br" />
+                17 апреля 2023 года
               </h3>
               <p><strong>Должность</strong></p>
               <p>
@@ -485,6 +485,7 @@
         </address>
       </div>
     </footer>
+
     <button class="body__up-button button" type="button">
       <svg
         class="body__up-button-icon"
