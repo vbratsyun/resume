@@ -4,6 +4,10 @@
   background-color: #c7d984;
   padding-bottom: 50px;
 
+  // @media (min-width: $tablet-width) {
+  //   padding-top: 126px;
+  // }
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
   }

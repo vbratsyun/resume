@@ -1,0 +1,22 @@
+.nav {
+  position: relative;
+  background-color: #ffa692;
+
+  // @media (min-width: $tablet-width) {
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     left: 0;
+  //     bottom: 0;
+  //     width: 100%;
+  //     height: 1px;
+  //     background-color: $background-black-color;
+  //   }
+  // }
+}
+
+.nav__list {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
+}
