@@ -1,0 +1,9 @@
+.nav {
+  width: 100%;
+}
+
+.nav__list {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
+}

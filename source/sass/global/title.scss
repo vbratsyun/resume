@@ -1,0 +1,15 @@
+.title {
+  font-size: 17px;
+  font-weight: 400;
+  color: #474242;
+  text-indent: initial;
+  margin: 0 0 20px;
+
+  &--info {
+    filter: drop-shadow(2px 2px 10px #474242);
+  }
+
+  @media (min-width: 768px) {
+    margin: 0 0 40px;
+  }
+}
