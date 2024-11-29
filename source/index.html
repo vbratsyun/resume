@@ -10,49 +10,46 @@
   </head>
   <body class="page__body body">
     <header class="body__header header">
-      <nav class="header__nav nav">
-        <ul class="nav__list nav-list list">
-          <li class="nav-list__item">
-            <a class="nav-list__link nav-list__link--start">Главная</a>
-          </li>
-          <li class="nav-list__item">
-            <a
-              class="nav-list__link nav-list__link--about-me link"
-              href="info.html#about-me"
-              >О себе</a
-            >
-          </li>
-          <li class="nav-list__item">
-            <a
-              class="nav-list__link nav-list__link--education link"
-              href="info.html#education"
-              >Образование</a
-            >
-          </li>
-          <li class="nav-list__item">
-            <a
-              class="nav-list__link nav-list__link--skills link"
-              href="info.html#skills"
-              >Навыки</a
-            >
-          </li>
-          <li class="nav-list__item">
-            <a
-              class="nav-list__link nav-list__link--experience link"
-              href="info.html#experience"
-              >Опыт работы</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="body__main main">
-      <h1 class="visually-hidden">Резюме html-верстальщика Брацюн Виктории</h1>
-      <section class="main__intro intro">
-        <h2 class="visually-hidden">Добро пожаловать на главную страницу</h2>
-        <button class="intro__button button" type="button">
+      <!-- <div class="header__wrapper"> -->
+        <nav class="header__nav nav">
+          <ul class="nav__list nav-list list">
+            <li class="nav-list__item">
+              <a class="nav-list__link nav-list__link--start">Главная</a>
+            </li>
+            <li class="nav-list__item">
+              <a
+                class="nav-list__link nav-list__link--about-me link"
+                href="info.html#about-me"
+                >О себе</a
+              >
+            </li>
+            <li class="nav-list__item">
+              <a
+                class="nav-list__link nav-list__link--education link"
+                href="info.html#education"
+                >Образование</a
+              >
+            </li>
+            <li class="nav-list__item">
+              <a
+                class="nav-list__link nav-list__link--skills link"
+                href="info.html#skills"
+                >Навыки</a
+              >
+            </li>
+            <li class="nav-list__item">
+              <a
+                class="nav-list__link nav-list__link--experience link"
+                href="info.html#experience"
+                >Опыт работы</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header__container"></div>
+        <button class="header__button button" type="button">
           <svg
-            class="intro__arrow"
+            class="header__button-arrow"
             role="presentation"
             x="0px"
             y="0px"
@@ -66,9 +63,13 @@
               ></path>
             </g>
           </svg>
-          <span class="visually-hidden">Посмотреть проекты</span>
+          <span class="visually-hidden">Посмотреть информацию ниже</span>
         </button>
-      </section>
+      <!-- </div> -->
+    </header>
+    <main class="body__main main">
+      <h1 class="visually-hidden">Резюме html-верстальщика Брацюн Виктории</h1>
+
       <section class="main__portfolio portfolio wrapper">
         <h2 class="visually-hidden">Выполненные проекты</h2>
         <div class="portfolio__container">
@@ -90,132 +91,16 @@
           </form>
         </div>
         <ul class="portfolio__sorting-list sorting-list list">
-          <li class="sorting-list__item sorting-list__item--sedona">
-            <a
-              class="sorting-list__link link"
-              href="https://github.com/vbratsyun/1890797-sedona-24"
-              target="_blank"
-            >
-              <picture>
-                <source
-                  type="image/webp"
-                  media="min-width:1440px"
-                  srcset="
-                    image/sedona-desktop.webp    1x,
-                    image/sedona-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="min-width:768px"
-                  srcset="
-                    image/sedona-tablet.webp    1x,
-                    image/sedona-tablet@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="
-                    image/sedona-mobile.webp    1x,
-                    image/sedona-mobile@2x.webp 2x
-                  "
-                />
-                <source
-                  media="min-width:1440px"
-                  srcset="
-                    image/sedona-desktop.png    1x,
-                    image/sedona-desktop@2x.png 2x
-                  "
-                />
-                <source
-                  media="min-width:768px"
-                  srcset="
-                    image/sedona-tablet.png    1x,
-                    image/sedona-tablet@2x.png 2x
-                  "
-                />
-                <img
-                  class="sorting-list__image"
-                  src="image/sedona-mobile.png"
-                  width="280"
-                  height="626"
-                  alt=""
-                  srcset="image/sedona-mobile@2x.png 2x"
-                />
-              </picture>
-
-              <p class="sorting-list__title title">
-                Проект Sedona - сайт по поиску гостевого жилья
-              </p>
-            </a>
-          </li>
-          <li class="sorting-list__item sorting-list__item--device">
-            <a
-              class="sorting-list__link link"
-              href="https://github.com/vbratsyun/1890797-device-32"
-              target="_blank"
-            >
-              <picture>
-                <source
-                  type="image/webp"
-                  media="min-width:1440px"
-                  srcset="
-                    image/device-desktop.webp    1x,
-                    image/device-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="min-width:768px"
-                  srcset="
-                    image/device-tablet.webp    1x,
-                    image/device-tablet@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="
-                    image/device-mobile.webp    1x,
-                    image/device-mobile@2x.webp 2x
-                  "
-                />
-                <source
-                  media="min-width:1440px"
-                  srcset="
-                    image/device-desktop.png    1x,
-                    image/device-desktop@2x.png 2x
-                  "
-                />
-                <source
-                  media="min-width:768px"
-                  srcset="
-                    image/device-tablet.png    1x,
-                    image/device-tablet@2x.png 2x
-                  "
-                />
-                <img
-                  class="sorting-list__image"
-                  src="image/device-mobile.png"
-                  width="280"
-                  height="626"
-                  alt=""
-                  srcset="image/device-mobile@2x.png 2x"
-                />
-              </picture>
-              <p class="sorting-list__title title">Интернет-магазин "Device"</p>
-            </a>
-          </li>
-
           <li class="sorting-list__item sorting-list__item--marron">
             <a
               class="sorting-list__link link"
-              href="https://github.com/vbratsyun/maroon-shop"
+              href="https://vbratsyun.github.io/maroon-shop/"
               target="_blank"
             >
               <picture>
                 <source
                   type="image/webp"
-                  media="min-width:1440px"
+                  media="(min-width:1440px)"
                   srcset="
                     image/marron-desktop.webp    1x,
                     image/marron-desktop@2x.webp 2x
@@ -223,7 +108,7 @@
                 />
                 <source
                   type="image/webp"
-                  media="min-width:768px"
+                  media="(min-width:768px)"
                   srcset="
                     image/marron-tablet.webp    1x,
                     image/marron-tablet@2x.webp 2x
@@ -237,14 +122,14 @@
                   "
                 />
                 <source
-                  media="min-width:1440px"
+                  media="(min-width:1440px)"
                   srcset="
                     image/marron-desktop.png    1x,
                     image/marron-desktop@2x.png 2x
                   "
                 />
                 <source
-                  media="min-width:768px"
+                  media="(min-width:768px)"
                   srcset="
                     image/marron-tablet.png    1x,
                     image/marron-tablet@2x.png 2x
@@ -254,7 +139,7 @@
                   class="sorting-list__image"
                   src="image/marron-mobile.png"
                   width="280"
-                  height="945"
+                  height="145"
                   alt=""
                   srcset="image/marron-mobile@2x.png 2x"
                 />
@@ -265,367 +150,16 @@
               </p>
             </a>
           </li>
-          <li class="sorting-list__item sorting-list__item--pink">
-            <a
-              class="sorting-list__link link"
-              href="https://github.com/vbratsyun/Pink"
-              target="_blank"
-            >
-              <picture>
-                <source
-                  type="image/webp"
-                  media="min-width:1440px"
-                  srcset="
-                    image/pink-desktop.webp    1x,
-                    image/pink-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="min-width:768px"
-                  srcset="
-                    image/pink-tablet.webp    1x,
-                    image/pink-tablet@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="
-                    image/pink-mobile.webp    1x,
-                    image/pink-mobile@2x.webp 2x
-                  "
-                />
-                <source
-                  media="min-width:1440px"
-                  srcset="
-                    image/pink-desktop.png    1x,
-                    image/pink-desktop@2x.png 2x
-                  "
-                />
-                <source
-                  media="min-width:768px"
-                  srcset="image/pink-tablet.png 1x, image/pink-tablet@2x.png 2x"
-                />
-                <img
-                  class="sorting-list__image"
-                  src="image/pink-mobile.png"
-                  width="280"
-                  height="945"
-                  alt=""
-                  srcset="image/pink-mobile@2x.png 2x"
-                />
-              </picture>
-
-              <p class="sorting-list__title title">
-                Сайт фотоприложения для раскрашивания серых будней "Pink"
-              </p>
-            </a>
-          </li>
-
-          <li class="sorting-list__item sorting-list__item--spshop">
-            <a
-              class="sorting-list__link link"
-              href="https://github.com/vbratsyun/SP.shop"
-              target="_blank"
-            >
-              <picture>
-                <source
-                  type="image/webp"
-                  media="min-width:1440px"
-                  srcset="
-                    image/spshop-desktop.webp    1x,
-                    image/spshop-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="min-width:768px"
-                  srcset="
-                    image/spshop-tablet.webp    1x,
-                    image/spshop-tablet@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="
-                    image/spshop-mobile.webp    1x,
-                    image/spshop-mobile@2x.webp 2x
-                  "
-                />
-                <source
-                  media="min-width:1440px"
-                  srcset="
-                    image/spshop-desktop.png    1x,
-                    image/spshop-desktop@2x.png 2x
-                  "
-                />
-                <source
-                  media="min-width:768px"
-                  srcset="
-                    image/spshop-tablet.png    1x,
-                    image/spshop-tablet@2x.png 2x
-                  "
-                />
-                <img
-                  class="sorting-list__image"
-                  src="image/spshop-mobile.png"
-                  width="280"
-                  height="239"
-                  alt=""
-                  srcset="image/spshop-mobile@2x.png 2x"
-                />
-              </picture>
-
-              <p class="sorting-list__title title">
-                Сайт спортивной одежды "SP.shop"
-              </p>
-            </a>
-          </li>
-          <li class="sorting-list__item sorting-list__item--gussi">
-            <a
-              class="sorting-list__link link"
-              href="https://github.com/vbratsyun/gussi"
-              target="_blank"
-            >
-              <picture>
-                <source
-                  type="image/webp"
-                  media="min-width:1440px"
-                  srcset="
-                    image/gussi-desktop.webp    1x,
-                    image/gussi-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="min-width:768px"
-                  srcset="
-                    image/gussi-tablet.webp    1x,
-                    image/gussi-tablet@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="
-                    image/gussi-mobile.webp    1x,
-                    image/gussi-mobile@2x.webp 2x
-                  "
-                />
-                <source
-                  media="min-width:1440px"
-                  srcset="
-                    image/gussi-desktop.png    1x,
-                    image/gussi-desktop@2x.png 2x
-                  "
-                />
-                <source
-                  media="min-width:768px"
-                  srcset="
-                    image/gussi-tablet.png    1x,
-                    image/gussi-tablet@2x.png 2x
-                  "
-                />
-                <img
-                  class="sorting-list__image"
-                  src="image/gussi-mobile.png"
-                  width="280"
-                  height="324"
-                  alt=""
-                  srcset="image/gussi-mobile@2x.png 2x"
-                />
-              </picture>
-
-              <p class="sorting-list__title title">
-                Страничка интернет-магазина женской одежды "Gussi"
-              </p>
-            </a>
-          </li>
-          <li class="sorting-list__item sorting-list__item--offerrum">
-            <a
-              class="sorting-list__link link"
-              href="https://github.com/vbratsyun/OFFERRUM"
-              target="_blank"
-            >
-              <picture>
-                <source
-                  type="image/webp"
-                  media="min-width:1440px"
-                  srcset="
-                    image/offerrum-desktop.webp    1x,
-                    image/offerrum-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="min-width:768px"
-                  srcset="
-                    image/offerrum-tablet.webp    1x,
-                    image/offerrum-tablet@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="
-                    image/offerrum-mobile.webp    1x,
-                    image/offerrum-mobile@2x.webp 2x
-                  "
-                />
-                <source
-                  media="min-width:1440px"
-                  srcset="
-                    image/offerrum-desktop.png    1x,
-                    image/offerrum-desktop@2x.png 2x
-                  "
-                />
-                <source
-                  media="min-width:768px"
-                  srcset="
-                    image/offerrum-tablet.png    1x,
-                    image/offerrum-tablet@2x.png 2x
-                  "
-                />
-                <img
-                  class="sorting-list__image"
-                  src="image/offerrum-mobile.png"
-                  width="280"
-                  height="367"
-                  alt=""
-                  srcset="image/offerrum-mobile@2x.png 2x"
-                />
-              </picture>
-
-              <p class="sorting-list__title title">
-                Как заработать на NFT — все способы заработка
-              </p>
-            </a>
-          </li>
-
-          <li class="sorting-list__item sorting-list__item--kekstagram">
-            <a
-              class="sorting-list__link link"
-              href="https://github.com/vbratsyun/1890797-kekstagram-28"
-              target="_blank"
-            >
-              <picture>
-                <source
-                  type="image/webp"
-                  media="min-width:1440px"
-                  srcset="
-                    image/kekstagram-desktop.webp    1x,
-                    image/kekstagram-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="min-width:768px"
-                  srcset="
-                    image/kekstagram-tablet.webp    1x,
-                    image/kekstagram-tablet@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="
-                    image/kekstagram-mobile.webp    1x,
-                    image/kekstagram-mobile@2x.webp 2x
-                  "
-                />
-                <source
-                  media="min-width:1440px"
-                  srcset="
-                    image/kekstagram-desktop.png    1x,
-                    image/kekstagram-desktop@2x.png 2x
-                  "
-                />
-                <source
-                  media="min-width:768px"
-                  srcset="
-                    image/kekstagram-tablet.png    1x,
-                    image/kekstagram-tablet@2x.png 2x
-                  "
-                />
-                <img
-                  class="sorting-list__image"
-                  src="image/kekstagram-mobile.png"
-                  width="280"
-                  height="150"
-                  alt=""
-                  srcset="image/kekstagram-mobile@2x.png 2x"
-                />
-              </picture>
-
-              <p class="sorting-list__title title">
-                Кекстаграм — сервис просмотра изображений
-              </p>
-            </a>
-          </li>
-          <li class="sorting-list__item sorting-list__item--global">
-            <a
-              class="sorting-list__link link"
-              href="https://github.com/vbratsyun/Global"
-              target="_blank"
-            >
-              <picture>
-                <source
-                  type="image/webp"
-                  media="min-width:1440px"
-                  srcset="
-                    image/global-desktop.webp    1x,
-                    image/global-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="min-width:768px"
-                  srcset="
-                    image/global-tablet.webp    1x,
-                    image/global-tablet@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="
-                    image/global-mobile.webp    1x,
-                    image/global-mobile@2x.webp 2x
-                  "
-                />
-                <source
-                  media="min-width:1440px"
-                  srcset="
-                    image/global-desktop.png    1x,
-                    image/global-desktop@2x.png 2x
-                  "
-                />
-                <source
-                  media="min-width:768px"
-                  srcset="
-                    image/global-tablet.png    1x,
-                    image/global-tablet@2x.png 2x
-                  "
-                />
-                <img
-                  class="sorting-list__image"
-                  src="image/global-mobile.png"
-                  width="280"
-                  height="152"
-                  alt=""
-                  srcset="image/global-mobile@2x.png 2x"
-                />
-              </picture>
-
-              <p class="sorting-list__title title">Колл-центр сайта "Global"</p>
-            </a>
-          </li>
           <li class="sorting-list__item sorting-list__item--kasmir">
             <a
               class="sorting-list__link link"
-              href="https://github.com/vbratsyun/Barbershop"
+              href="https://vbratsyun.github.io/Barbershop/"
               target="_blank"
             >
               <picture>
                 <source
                   type="image/webp"
-                  media="min-width:1440px"
+                  media="(min-width:1440px)"
                   srcset="
                     image/kasmir-desktop.webp    1x,
                     image/kasmir-desktop@2x.webp 2x
@@ -633,7 +167,7 @@
                 />
                 <source
                   type="image/webp"
-                  media="min-width:768px"
+                  media="(min-width:768px)"
                   srcset="
                     image/kasmir-tablet.webp    1x,
                     image/kasmir-tablet@2x.webp 2x
@@ -647,14 +181,14 @@
                   "
                 />
                 <source
-                  media="min-width:1440px"
+                  media="(min-width:1440px)"
                   srcset="
                     image/kasmir-desktop.png    1x,
                     image/kasmir-desktop@2x.png 2x
                   "
                 />
                 <source
-                  media="min-width:768px"
+                  media="(min-width:768px)"
                   srcset="
                     image/kasmir-tablet.png    1x,
                     image/kasmir-tablet@2x.png 2x
@@ -664,7 +198,7 @@
                   class="sorting-list__image"
                   src="image/kasmir-mobile.png"
                   width="280"
-                  height="152"
+                  height="145"
                   alt=""
                   srcset="image/kasmir-mobile@2x.png 2x"
                 />
@@ -675,75 +209,134 @@
               </p>
             </a>
           </li>
-          <li class="sorting-list__item sorting-list__item--cat-energy">
+          <li class="sorting-list__item sorting-list__item--spshop">
             <a
               class="sorting-list__link link"
-              href="https://github.com/vbratsyun/CatEnergy"
+              href="https://vbratsyun.github.io/SP.shop/"
               target="_blank"
             >
               <picture>
                 <source
                   type="image/webp"
-                  media="min-width:1440px"
+                  media="(min-width:1440px)"
                   srcset="
-                    image/cat-energy-desktop.webp    1x,
-                    image/cat-energy-desktop@2x.webp 2x
+                    image/spshop-desktop.webp    1x,
+                    image/spshop-desktop@2x.webp 2x
                   "
                 />
                 <source
                   type="image/webp"
-                  media="min-width:768px"
+                  media="(min-width:768px)"
                   srcset="
-                    image/cat-energy-tablet.webp    1x,
-                    image/cat-energy-tablet@2x.webp 2x
+                    image/spshop-tablet.webp    1x,
+                    image/spshop-tablet@2x.webp 2x
                   "
                 />
                 <source
                   type="image/webp"
                   srcset="
-                    image/cat-energy-mobile.webp    1x,
-                    image/cat-energy-mobile@2x.webp 2x
+                    image/spshop-mobile.webp    1x,
+                    image/spshop-mobile@2x.webp 2x
                   "
                 />
                 <source
-                  media="min-width:1440px"
+                  media="(min-width:1440px)"
                   srcset="
-                    image/cat-energy-desktop.png    1x,
-                    image/cat-energy-desktop@2x.png 2x
+                    image/spshop-desktop.png    1x,
+                    image/spshop-desktop@2x.png 2x
                   "
                 />
                 <source
-                  media="min-width:768px"
+                  media="(min-width:768px)"
                   srcset="
-                    image/cat-energy-tablet.png    1x,
-                    image/cat-energy-tablet@2x.png 2x
+                    image/spshop-tablet.png    1x,
+                    image/spshop-tablet@2x.png 2x
                   "
                 />
                 <img
                   class="sorting-list__image"
-                  src="image/cat-energy-mobile.png"
+                  src="image/spshop-mobile.png"
                   width="280"
-                  height="546"
+                  height="145"
                   alt=""
-                  srcset="image/cat-energy-mobile@2x.png 2x"
+                  srcset="image/spshop-mobile@2x.png 2x"
                 />
               </picture>
 
               <p class="sorting-list__title title">
-                Сайт функционального питания для котов
+                Сайт спортивной одежды "SP.shop"
+              </p>
+            </a>
+          </li>
+          <li class="sorting-list__item sorting-list__item--gussi">
+            <a
+              class="sorting-list__link link"
+              href="https://vbratsyun.github.io/gussi/"
+              target="_blank"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width:1440px)"
+                  srcset="
+                    image/gussi-desktop.webp    1x,
+                    image/gussi-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width:768px)"
+                  srcset="
+                    image/gussi-tablet.webp    1x,
+                    image/gussi-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    image/gussi-mobile.webp    1x,
+                    image/gussi-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width:1440px)"
+                  srcset="
+                    image/gussi-desktop.png    1x,
+                    image/gussi-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    image/gussi-tablet.png    1x,
+                    image/gussi-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="sorting-list__image"
+                  src="image/gussi-mobile.png"
+                  width="280"
+                  height="145"
+                  alt=""
+                  srcset="image/gussi-mobile@2x.png 2x"
+                />
+              </picture>
+
+              <p class="sorting-list__title title">
+                Страничка интернет-магазина женской одежды "Gussi"
               </p>
             </a>
           </li>
           <li class="sorting-list__item sorting-list__item--mishka">
             <a
               class="sorting-list__link link"
-              href="https://github.com/vbratsyun/Mishka"
+              href="https://vbratsyun.github.io/Mishka/"
               target="_blank"
             >
               <picture>
                 <source
                   type="image/webp"
-                  media="min-width:1440px"
+                  media="(min-width:1440px)"
                   srcset="
                     image/mishka-desktop.webp    1x,
                     image/mishka-desktop@2x.webp 2x
@@ -751,7 +344,7 @@
                 />
                 <source
                   type="image/webp"
-                  media="min-width:768px"
+                  media="(min-width:768px)"
                   srcset="
                     image/mishka-tablet.webp    1x,
                     image/mishka-tablet@2x.webp 2x
@@ -765,14 +358,14 @@
                   "
                 />
                 <source
-                  media="min-width:1440px"
+                  media="(min-width:1440px)"
                   srcset="
                     image/mishka-desktop.png    1x,
                     image/mishka-desktop@2x.png 2x
                   "
                 />
                 <source
-                  media="min-width:768px"
+                  media="(min-width:768px)"
                   srcset="
                     image/mishka-tablet.png    1x,
                     image/mishka-tablet@2x.png 2x
@@ -782,7 +375,7 @@
                   class="sorting-list__image"
                   src="image/mishka-mobile.png"
                   width="280"
-                  height="882"
+                  height="145"
                   alt=""
                   srcset="image/mishka-mobile@2x.png 2x"
                 />
@@ -790,6 +383,416 @@
 
               <p class="sorting-list__title title">
                 Интернет-магазин игрушек ручной работы "Mishka"
+              </p>
+            </a>
+          </li>
+
+          <li class="sorting-list__item sorting-list__item--global">
+            <a
+              class="sorting-list__link link"
+              href="https://vbratsyun.github.io/Global/"
+              target="_blank"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width:1440px)"
+                  srcset="
+                    image/global-desktop.webp    1x,
+                    image/global-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width:768px)"
+                  srcset="
+                    image/global-tablet.webp    1x,
+                    image/global-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    image/global-mobile.webp    1x,
+                    image/global-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width:1440px)"
+                  srcset="
+                    image/global-desktop.png    1x,
+                    image/global-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    image/global-tablet.png    1x,
+                    image/global-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="sorting-list__image"
+                  src="image/global-mobile.png"
+                  width="280"
+                  height="145"
+                  alt=""
+                  srcset="image/global-mobile@2x.png 2x"
+                />
+              </picture>
+
+              <p class="sorting-list__title title">Колл-центр сайта "Global"</p>
+            </a>
+          </li>
+
+          <li class="sorting-list__item sorting-list__item--device">
+            <a
+              class="sorting-list__link link"
+              href="https://vbratsyun.github.io/1890797-device-32/"
+              target="_blank"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width:1440px)"
+                  srcset="
+                    image/device-desktop.webp    1x,
+                    image/device-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width:768px)"
+                  srcset="
+                    image/device-tablet.webp    1x,
+                    image/device-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    image/device-mobile.webp    1x,
+                    image/device-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width:1440px)"
+                  srcset="
+                    image/device-desktop.png    1x,
+                    image/device-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    image/device-tablet.png    1x,
+                    image/device-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="sorting-list__image"
+                  src="image/device-mobile.png"
+                  width="280"
+                  height="145"
+                  alt=""
+                  srcset="image/device-mobile@2x.png 2x"
+                />
+              </picture>
+              <p class="sorting-list__title title">Интернет-магазин "Device"</p>
+            </a>
+          </li>
+          <li class="sorting-list__item sorting-list__item--cat-energy">
+            <a
+              class="sorting-list__link link"
+              href="https://vbratsyun.github.io/CatEnergy/"
+              target="_blank"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width:1440px)"
+                  srcset="
+                    image/cat-energy-desktop.webp    1x,
+                    image/cat-energy-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width:768px)"
+                  srcset="
+                    image/cat-energy-tablet.webp    1x,
+                    image/cat-energy-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    image/cat-energy-mobile.webp    1x,
+                    image/cat-energy-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width:1440px)"
+                  srcset="
+                    image/cat-energy-desktop.png    1x,
+                    image/cat-energy-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    image/cat-energy-tablet.png    1x,
+                    image/cat-energy-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="sorting-list__image"
+                  src="image/cat-energy-mobile.png"
+                  width="280"
+                  height="145"
+                  alt=""
+                  srcset="image/cat-energy-mobile@2x.png 2x"
+                />
+              </picture>
+
+              <p class="sorting-list__title title">
+                Сайт функционального питания для котов
+              </p>
+            </a>
+          </li>
+
+          <li class="sorting-list__item sorting-list__item--sedona">
+            <a
+              class="sorting-list__link link"
+              href="https://vbratsyun.github.io/1890797-sedona-24/"
+              target="_blank"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width:1440px)"
+                  srcset="
+                    image/sedona-desktop.webp    1x,
+                    image/sedona-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width:768px)"
+                  srcset="
+                    image/sedona-tablet.webp    1x,
+                    image/sedona-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    image/sedona-mobile.webp    1x,
+                    image/sedona-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width:1440px)"
+                  srcset="
+                    image/sedona-desktop.png    1x,
+                    image/sedona-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    image/sedona-tablet.png    1x,
+                    image/sedona-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="sorting-list__image"
+                  src="image/sedona-mobile.png"
+                  width="280"
+                  height="145"
+                  alt=""
+                  srcset="image/sedona-mobile@2x.png 2x"
+                />
+              </picture>
+
+              <p class="sorting-list__title title">
+                Проект Sedona - сайт по поиску гостевого жилья
+              </p>
+            </a>
+          </li>
+          <li class="sorting-list__item sorting-list__item--offerrum">
+            <a
+              class="sorting-list__link link"
+              href="https://vbratsyun.github.io/OFFERRUM/"
+              target="_blank"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width:1440px)"
+                  srcset="
+                    image/offerrum-desktop.webp    1x,
+                    image/offerrum-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width:768px)"
+                  srcset="
+                    image/offerrum-tablet.webp    1x,
+                    image/offerrum-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    image/offerrum-mobile.webp    1x,
+                    image/offerrum-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width:1440px)"
+                  srcset="
+                    image/offerrum-desktop.png    1x,
+                    image/offerrum-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    image/offerrum-tablet.png    1x,
+                    image/offerrum-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="sorting-list__image"
+                  src="image/offerrum-mobile.png"
+                  width="280"
+                  height="145"
+                  alt=""
+                  srcset="image/offerrum-mobile@2x.png 2x"
+                />
+              </picture>
+
+              <p class="sorting-list__title title">
+                Как заработать на NFT — все способы заработка
+              </p>
+            </a>
+          </li>
+          <li class="sorting-list__item sorting-list__item--pink">
+            <!-- доделать проект -->
+            <a
+              class="sorting-list__link link"
+              href="https://github.com/vbratsyun/Pink"
+              target="_blank"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width:1440px)"
+                  srcset="
+                    image/pink-desktop.webp    1x,
+                    image/pink-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width:768px)"
+                  srcset="
+                    image/pink-tablet.webp    1x,
+                    image/pink-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    image/pink-mobile.webp    1x,
+                    image/pink-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width:1440px)"
+                  srcset="
+                    image/pink-desktop.png    1x,
+                    image/pink-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="image/pink-tablet.png 1x, image/pink-tablet@2x.png 2x"
+                />
+                <img
+                  class="sorting-list__image"
+                  src="image/pink-mobile.png"
+                  width="280"
+                  height="145"
+                  alt=""
+                  srcset="image/pink-mobile@2x.png 2x"
+                />
+              </picture>
+
+              <p class="sorting-list__title title">
+                Сайт фотоприложения для раскрашивания серых будней "Pink"
+              </p>
+            </a>
+          </li>
+
+          <li class="sorting-list__item sorting-list__item--kekstagram">
+            <a
+              class="sorting-list__link link"
+              href="https://vbratsyun.github.io/1890797-kekstagram-28/"
+              target="_blank"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width:1440px)"
+                  srcset="
+                    image/kekstagram-desktop.webp    1x,
+                    image/kekstagram-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width:768px)"
+                  srcset="
+                    image/kekstagram-tablet.webp    1x,
+                    image/kekstagram-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    image/kekstagram-mobile.webp    1x,
+                    image/kekstagram-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width:1440px)"
+                  srcset="
+                    image/kekstagram-desktop.png    1x,
+                    image/kekstagram-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    image/kekstagram-tablet.png    1x,
+                    image/kekstagram-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="sorting-list__image"
+                  src="image/kekstagram-mobile.png"
+                  width="280"
+                  height="145"
+                  alt=""
+                  srcset="image/kekstagram-mobile@2x.png 2x"
+                />
+              </picture>
+
+              <p class="sorting-list__title title">
+                Кекстаграм — сервис просмотра изображений
               </p>
             </a>
           </li>

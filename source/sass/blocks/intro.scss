@@ -1,9 +1,9 @@
 .intro {
   position: relative;
-  min-height: 525px;
   background: url("../image/decorative-images/index-background-tablet.png")
     no-repeat;
-  background-position: 78% 90%;
+  background-position: 78% 0;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background: url("../image/decorative-images/index-background-tablet@2x.png")
@@ -33,8 +33,8 @@
 
 .intro__button {
   position: absolute;
-  top: 105%;
   left: 50%;
+  bottom: 0;
   transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
