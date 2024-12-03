@@ -8,42 +8,24 @@
     <meta name="keywords" content="резюме, html-верстальщик, web-разработка" /> -->
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
-  <body class="page__body">
+  <body class="page__body body">
     <header class="body__header header header--info">
       <nav class="header__nav nav">
         <ul class="nav__list nav-list list">
           <li class="nav-list__item">
-            <a
-              class="nav-list__link nav-list__link--start link"
-              href="index.html"
-              >Главная</a
-            >
+            <a class="nav-list__link link" href="index.html">Главная</a>
           </li>
           <li class="nav-list__item">
-            <a
-              class="nav-list__link nav-list__link--about-me link"
-              href="#about-me"
-              >О себе</a
-            >
+            <a class="nav-list__link link" href="#about-me">О себе</a>
           </li>
           <li class="nav-list__item">
-            <a
-              class="nav-list__link nav-list__link--education link"
-              href="#education"
-              >Образование</a
-            >
+            <a class="nav-list__link link" href="#education">Образование</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link nav-list__link--skills link" href="#skills"
-              >Навыки</a
-            >
+            <a class="nav-list__link link" href="#skills">Навыки</a>
           </li>
           <li class="nav-list__item">
-            <a
-              class="nav-list__link nav-list__link--experience link"
-              href="#experience"
-              >Опыт работы</a
-            >
+            <a class="nav-list__link link" href="#experience">Опыт работы</a>
           </li>
         </ul>
       </nav>
@@ -54,35 +36,38 @@
         <h1 class="visually-hidden">Информация о Брацюн Виктории</h1>
         <section class="about-me" id="about-me">
           <a
-            class="about-me__link link"
+            class="about-me__avatar link"
             href="https://spb.hh.ru/resume/e0237f10ff0afa0ec30039ed1f714d7266766a"
             target="_blank"
           >
           </a>
           <h2 class="title title--info">О себе</h2>
-          <p>
+          <p class="text">
             Меня зовут Виктория, увлекаюсь HTML-версткой последних 3 года,
             первый сайт сделала в 2021.
           </p>
-          <p>
+          <p class="text">
             Б<strong>о</strong>льшую часть карьеры работала в сфере образования,
             в данный момент делаю упор на&nbsp;Frontend.
           </p>
-          <p>В свободное время изучаю JavaScript.</p>
-          <p>
+          <p class="text">В свободное время изучаю JavaScript.</p>
+          <p class="text">
             Имею опыт адаптивной кросс-браузерной вёрстки HTML-страниц на основе
             макетов Figma с использованием методологии БЭМ. Верстаю семантично,
             под Retina.
           </p>
-          <p>
+          <p class="text">
             Есть огромное желание развиваться в данном направлении, обучаться,
             повышать квалификацию, перенимать опыт коллег. Ссылки на мои проекты
             здесь: ссылки на GitHub (vbratsyun)
-            <a href="https://github.com/vbratsyun?tab=repositories"
+            <a
+              class="about-me__link link"
+              href="https://github.com/vbratsyun?tab=repositories"
+              target="_blank"
               >https://github.com/vbratsyun?tab=repositories</a
             >.
           </p>
-          <p>
+          <p class="text">
             Стараюсь выполнять работу качественно и своевременно. Не имею
             привычки бросать дело незаконченным. С удовольствием приступаю к
             новым задачам.
@@ -90,11 +75,11 @@
         </section>
         <section class="education" id="education">
           <h2 class="title title--info">Образование</h2>
-          <p>
+          <p class="text">
             Высшее техническое, специальность 11.04.01&nbsp;«Радиотехника»,
             квалификация:&nbsp;магистр радиотехники.
           </p>
-          <p>
+          <p class="text">
             Среднее профессиональное, специальность 42.02.02&nbsp;«Издательское
             дело», квалификация:&nbsp;специалист издательского дела.
           </p>
@@ -119,304 +104,463 @@
           <h2 class="title title--info">Опыт работы</h2>
           <ul class="experience-list list">
             <li class="experience-list__item">
-              <h3 class="experience-list__title title title--info">
-                14 февраля 2023 года →<br class="br" />
-                17 апреля 2023 года
-              </h3>
-              <p><strong>Должность</strong></p>
-              <p>
-                Студент курса «JavaScript. Профессиональная разработка
-                веб-интерфейсов»
-              </p>
-              <p><strong>Задачи.</strong> Использование и применение:</p>
-              <ul class="experience-list__tasks-list list">
-                <li>
-                  основных конструкций JavaScript: условия, циклы и функции;
-                </li>
-                <li>сложных типов данных: массивов и объектов;</li>
-                <li>методов и функций для работы с массивами и объектами;</li>
-                <li>
-                  создание, удаление, перемещение и управление DOM-элементами;
-                </li>
-                <li>работа с событиями;</li>
-                <li>
-                  асинхронности и способов её достижения с помощью промисов;
-                </li>
-                <li>
-                  технологий, которые позволяют делать запросы к серверу из
-                  браузера.
-                </li>
-              </ul>
-              <p><strong>Достижения:</strong></p>
-              <p>На данный момент успешно сдан проект «Кекстаграм».</p>
-              <a
-                class="experience-list__link"
-                href="https://github.com/vbratsyun/1890797-kekstagram-28"
-                >https://github.com/vbratsyun/1890797-kekstagram-28</a
+              <h3
+                class="experience-list__title title title--info title--info-dates"
               >
-              <p><strong>Реализовано:</strong></p>
-              <ul class="experience-list__progress-list list">
-                <li>
-                  загрузка нового изображения на сайт и заполнение информации об
-                  изображении;
-                </li>
-                <li>
-                  редактирование изображения и ограничения, накладываемые на
-                  поля; отправка данных на сервер;
-                </li>
-                <li>просмотр загруженных изображений;</li>
-                <li>фильтрация изображений от других пользователей.</li>
-              </ul>
-            </li>
-            <li class="experience-list__item text">
-              <h3 class="experience-list__title title title--info">
-                22 ноября 2021 года →<br class="br" />
-                6 февраля 2022 года
+                <p class="experience-list__title-first-date">
+                  14 февраля 2023 года
+                  <span class="experience-list__title-arrow"></span>
+                </p>
+                <span>17 апреля 2023 года</span>
               </h3>
-              <p><strong>Должность</strong></p>
-              <p>
-                Студент курса «HTML и CSS. Адаптивная вёрстка и автоматизация»
-              </p>
-              <p><strong>Задачи.</strong> Использование и применение:</p>
-              <ul class="experience-list__tasks-list list">
-                <li class="list__item">методологий вёрстки;</li>
-                <li class="list__item">препроцессоров и автоматизацию;</li>
-                <li class="list__item">адаптивных сеток;</li>
-                <li class="list__item">адаптивных декоративных элементов;</li>
-                <li class="list__item">адаптивной графики;</li>
-                <li class="list__item">векторной графики и оптимизации;</li>
-                <li class="list__item">векторной графики и оптимизации;</li>
-                <li class="list__item">автоматизации;</li>
-                <li class="list__item">
-                  определение и повышение производительности вёрстки.
-                </li>
-              </ul>
-              <p><strong>Достижения:</strong></p>
-              <p>На данный момент успешно сдан проект «Седона».</p>
-              <a
-                class="experience-list__link"
-                href="https://github.com/vbratsyun/1890797-sedona-24"
-                >https://github.com/vbratsyun/1890797-sedona-24</a
+              <div class="experience-list__container">
+                <div>
+                  <p class="experience-list__subtitle">
+                    <strong>Должность</strong>
+                  </p>
+                  <p class="text text--experience">
+                    Студент курса «JavaScript. Профессиональная разработка
+                    веб-интерфейсов»
+                  </p>
+                </div>
+                <div>
+                  <p class="experience-list__subtitle">
+                    <strong>Задачи.</strong> Использование и применение:
+                  </p>
+                  <ul class="experience-list__tasks-list list">
+                    <li>
+                      основных конструкций JavaScript: условия, циклы и функции;
+                    </li>
+                    <li>сложных типов данных: массивов и объектов;</li>
+                    <li>
+                      методов и функций для работы с массивами и объектами;
+                    </li>
+                    <li>
+                      создание, удаление, перемещение и управление
+                      DOM-элементами;
+                    </li>
+                    <li>работа с событиями;</li>
+                    <li>
+                      асинхронности и способов её достижения с помощью промисов;
+                    </li>
+                    <li>
+                      технологий, которые позволяют делать запросы к серверу из
+                      браузера.
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="experience-list__subtitle">
+                    <strong>Достижения:</strong>
+                  </p>
+                  <p class="text">Успешно сдан проект «Кекстаграм».</p>
+                  <a
+                    class="experience-list__link link"
+                    href="https://vbratsyun.github.io/1890797-kekstagram-28/"
+                    target="_blank"
+                    >https://vbratsyun.github.io/1890797-kekstagram-28/</a
+                  >
+                </div>
+                <div>
+                  <p class="experience-list__subtitle">
+                    <strong>Реализовано:</strong>
+                  </p>
+                  <ul class="experience-list__progress-list list">
+                    <li>
+                      загрузка нового изображения на сайт и заполнение
+                      информации об изображении;
+                    </li>
+                    <li>
+                      редактирование изображения и ограничения, накладываемые на
+                      поля; отправка данных на сервер;
+                    </li>
+                    <li>просмотр загруженных изображений;</li>
+                    <li>фильтрация изображений от других пользователей.</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="experience-list__item">
+              <h3
+                class="experience-list__title title title--info title--info-dates"
               >
-              <p><strong>Реализовано:</strong></p>
-              <ul class="experience-list__progress-list list">
-                <li class="list__item">
-                  адаптивность сетки: мобильная, планшетная и десктопная версии;
-                </li>
-                <li class="list__item">
-                  адаптивность графики: ретинизация, векторные изображения;
-                </li>
-                <li class="list__item">используемая методология: БЭМ;</li>
-                <li class="list__item">используемый препроцессор: Sass;</li>
-                <li class="list__item">
-                  используемый инструмент автоматизации: Gulp;
-                </li>
-                <li class="list__item">
-                  мобильное меню. Pеализация с использованием JS.
-                </li>
-              </ul>
+                <p class="experience-list__title-first-date">
+                  22 ноября 2021 года<span
+                    class="experience-list__title-arrow"
+                  ></span>
+                </p>
+                <span>6 февраля 2022 года</span>
+              </h3>
+              <div class="experience-list__container">
+                <div>
+                  <p class="experience-list__subtitle">
+                    <strong>Должность</strong>
+                  </p>
+                  <p class="text text--experience">
+                    Студент курса «HTML и CSS. Адаптивная вёрстка и
+                    автоматизация»
+                  </p>
+                </div>
+                <div>
+                  <p class="experience-list__subtitle">
+                    <strong>Задачи.</strong> Использование и применение:
+                  </p>
+                  <ul class="experience-list__tasks-list list">
+                    <li class="list__item">методологий вёрстки;</li>
+                    <li class="list__item">препроцессоров и автоматизацию;</li>
+                    <li class="list__item">адаптивных сеток;</li>
+                    <li class="list__item">
+                      адаптивных декоративных элементов;
+                    </li>
+                    <li class="list__item">адаптивной графики;</li>
+                    <li class="list__item">векторной графики и оптимизации;</li>
+                    <li class="list__item">векторной графики и оптимизации;</li>
+                    <li class="list__item">автоматизации;</li>
+                    <li class="list__item">
+                      определение и повышение производительности вёрстки.
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="experience-list__subtitle">
+                    <strong>Достижения:</strong>
+                  </p>
+                  <p class="text">Успешно сдан проект «Седона».</p>
+                  <a
+                    class="experience-list__link link"
+                    href="https://vbratsyun.github.io/1890797-sedona-24/"
+                    target="_blank"
+                    >https://vbratsyun.github.io/1890797-sedona-24/</a
+                  >
+                </div>
+                <div>
+                  <p class="experience-list__subtitle">
+                    <strong>Реализовано:</strong>
+                  </p>
+                  <ul class="experience-list__progress-list list">
+                    <li class="list__item">
+                      адаптивность сетки: мобильная, планшетная и десктопная
+                      версии;
+                    </li>
+                    <li class="list__item">
+                      адаптивность графики: ретинизация, векторные изображения;
+                    </li>
+                    <li class="list__item">используемая методология: БЭМ;</li>
+                    <li class="list__item">используемый препроцессор: Sass;</li>
+                    <li class="list__item">
+                      используемый инструмент автоматизации: Gulp;
+                    </li>
+                    <li class="list__item">
+                      мобильное меню. Pеализация с использованием JS.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="experience-list__item">
-              <h3 class="experience-list__title title title--info">
-                20 сентября 2021 года →<br class="br" />
-                21 ноября 2021 года
-              </h3>
-              <p><strong>Должность</strong></p>
-              <p>Студент курса «HTML и CSS. Профессиональная вёрстка сайтов»</p>
-              <p><strong>Задачи.</strong> Использование и применение:</p>
-              <ul class="experience-list__tasks-list list">
-                <li class="list__item">разметки;</li>
-                <li class="list__item">графики и базовой стилизации;</li>
-                <li class="list__item">сетки страниц на флексах;</li>
-                <li class="list__item">сетки компонентов на флексах;</li>
-                <li class="list__item">сетки компонентов на гридах;</li>
-                <li class="list__item">декоративных элементов;</li>
-                <li class="list__item">попапов, слайдеров, форм.</li>
-              </ul>
-              <p><strong>Достижения:</strong></p>
-              <p>На данный момент успешно сдан проект «Девайс».</p>
-              <a
-                class="experience-list__link"
-                href="https://github.com/vbratsyun/1890797-device-32"
-                >https://github.com/vbratsyun/1890797-device-32</a
+              <h3
+                class="experience-list__title title title--info title--info-dates"
               >
-              <p><strong>Реализовано:</strong></p>
-              <ul class="experience-list__progress-list list">
-                <li class="list__item">
-                  разметка страницы в соответствии с макетом в Figma;
-                </li>
-                <li class="list__item">взаимодействие с элементами;</li>
-                <li class="list__item">работоспособность формы;</li>
-                <li class="list__item">подписи полей форм;</li>
-                <li class="list__item">подключение стилей;</li>
-                <li class="list__item">контентная и декоративная графика;</li>
-                <li class="list__item">размеры графики в разметке;</li>
-                <li class="list__item">описание графики;</li>
-                <li class="list__item">подписи интерактивных элементов;</li>
-                <li class="list__item">области интерактивных элементов;</li>
-                <li class="list__item">кроссбраузерность;</li>
-                <li class="list__item">проверка на валидацию HTML;</li>
-                <li class="list__item">проверка на переполнение;</li>
-                <li class="list__item">
-                  проверка с помощью инструмента PerfectPixel.
-                </li>
-              </ul>
+                <p class="experience-list__title-first-date">
+                  20 сентября 2021 года
+                  <span class="experience-list__title-arrow"></span>
+                </p>
+                <span>21 ноября 2021 года</span>
+              </h3>
+              <div class="experience-list__container">
+                <div>
+                  <p class="experience-list__subtitle">
+                    <strong>Должность</strong>
+                  </p>
+                  <p class="text text--experience">
+                    Студент курса «HTML и CSS. Профессиональная вёрстка сайтов»
+                  </p>
+                </div>
+                <div>
+                  <p class="experience-list__subtitle">
+                    <strong>Задачи.</strong> Использование и применение:
+                  </p>
+                  <ul class="experience-list__tasks-list list">
+                    <li class="list__item">разметки;</li>
+                    <li class="list__item">графики и базовой стилизации;</li>
+                    <li class="list__item">сетки страниц на флексах;</li>
+                    <li class="list__item">сетки компонентов на флексах;</li>
+                    <li class="list__item">сетки компонентов на гридах;</li>
+                    <li class="list__item">декоративных элементов;</li>
+                    <li class="list__item">попапов, слайдеров, форм.</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="experience-list__subtitle">
+                    <strong>Достижения:</strong>
+                  </p>
+                  <p class="text">Успешно сдан проект «Девайс».</p>
+                  <a
+                    class="experience-list__link link"
+                    href="https://vbratsyun.github.io/1890797-device-32/"
+                    target="_blank"
+                    >https://vbratsyun.github.io/1890797-device-32/</a
+                  >
+                </div>
+                <div>
+                  <p class="experience-list__subtitle">
+                    <strong>Реализовано:</strong>
+                  </p>
+                  <ul class="experience-list__progress-list list">
+                    <li class="list__item">
+                      разметка страницы в соответствии с макетом в Figma;
+                    </li>
+                    <li class="list__item">взаимодействие с элементами;</li>
+                    <li class="list__item">работоспособность формы;</li>
+                    <li class="list__item">подписи полей форм;</li>
+                    <li class="list__item">подключение стилей;</li>
+                    <li class="list__item">
+                      контентная и декоративная графика;
+                    </li>
+                    <li class="list__item">размеры графики в разметке;</li>
+                    <li class="list__item">описание графики;</li>
+                    <li class="list__item">подписи интерактивных элементов;</li>
+                    <li class="list__item">области интерактивных элементов;</li>
+                    <li class="list__item">кроссбраузерность;</li>
+                    <li class="list__item">проверка на валидацию HTML;</li>
+                    <li class="list__item">проверка на переполнение;</li>
+                    <li class="list__item">
+                      проверка с помощью инструмента PerfectPixel.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="experience-list__item">
-              <h3 class="experience-list__title title title--info">
-                24 сентября 2019 года →<br class="br" />
-                29 ноября 2019 года
+              <h3
+                class="experience-list__title title title--info title--info-dates"
+              >
+                <p class="experience-list__title-first-date">
+                  24 сентября 2019 года
+                  <span class="experience-list__title-arrow"></span>
+                </p>
+                <span>29 ноября 2019 года</span>
               </h3>
-              <p><strong>Должность</strong></p>
-              <p>Преподаватель</p>
-              <p><strong>Задачи:</strong></p>
-              <ul class="experience-list__tasks-list list">
-                <li class="list__item">
-                  проведение обучения обучающихся в соответствии с требованиями
-                  федеральных государственных образовательных стандартов;
-                </li>
-                <li class="list__item">
-                  разработка и обновление рабочих программ, планов занятий,
-                  оценочных средств и других методических материалов по учебным
-                  дисциплинам (модулям); подбор учебников, составление учебных и
-                  учебно-методических пособий, электронных образовательных
-                  ресурсов и иных материалов по программам подготовки;
-                </li>
-                <li class="list__item">
-                  контроль и оценка результатов освоения учебных дисциплин
-                  (модулей) в процессе промежуточной аттестации;
-                </li>
-                <li class="list__item">
-                  оценка освоения образовательной программы при проведении
-                  итоговой (государственной итоговой) аттестации в составе
-                  экзаменационной комиссии;
-                </li>
-                <li class="list__item">
-                  организация проведения конференций, выставок, конкурсов
-                  профессионального мастерства, иных конкурсов и аналогичных
-                  мероприятий (в области преподаваемой учебной дисциплины
-                  (модуля)).
-                </li>
-              </ul>
+              <div class="experience-list__container">
+                <div>
+                  <p class="experience-list__subtitle">
+                    <strong>Должность</strong>
+                  </p>
+                  <p class="text text--experience">Преподаватель</p>
+                </div>
+                <div class="experience-list__tasks">
+                  <p class="experience-list__subtitle">
+                    <strong>Задачи:</strong>
+                  </p>
+                  <ul class="experience-list__tasks-list list">
+                    <li class="list__item">
+                      проведение обучения обучающихся в соответствии с
+                      требованиями федеральных государственных образовательных
+                      стандартов;
+                    </li>
+                    <li class="list__item">
+                      разработка и обновление рабочих программ, планов занятий,
+                      оценочных средств и других методических материалов по
+                      учебным дисциплинам (модулям); подбор учебников,
+                      составление учебных и учебно-методических пособий,
+                      электронных образовательных ресурсов и иных материалов по
+                      программам подготовки;
+                    </li>
+                    <li class="list__item">
+                      контроль и оценка результатов освоения учебных дисциплин
+                      (модулей) в процессе промежуточной аттестации;
+                    </li>
+                    <li class="list__item">
+                      оценка освоения образовательной программы при проведении
+                      итоговой (государственной итоговой) аттестации в составе
+                      экзаменационной комиссии;
+                    </li>
+                    <li class="list__item">
+                      организация проведения конференций, выставок, конкурсов
+                      профессионального мастерства, иных конкурсов и аналогичных
+                      мероприятий (в области преподаваемой учебной дисциплины
+                      (модуля)).
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="experience-list__item">
-              <h3 class="experience-list__title title title--info">
-                5 октября 2017 года →<br class="br" />
-                23 сентября 2019 года
+              <h3
+                class="experience-list__title title title--info title--info-dates"
+              >
+                <p class="experience-list__title-first-date">
+                  5 октября 2017 года
+                  <span class="experience-list__title-arrow"></span>
+                </p>
+                <span>23 сентября 2019 года</span>
               </h3>
-              <p><strong>Должность</strong></p>
-              <p>Заведующий методическим кабинетом</p>
-              <p><strong>Задачи:</strong></p>
-              <ul class="experience-list__tasks-list list">
-                <li class="list__item">
-                  организация текущего и перспективного планирования
-                  деятельности учебно-методического кабинета с учетом ее целей,
-                  задач и направлений;
-                </li>
-                <li class="list__item">
-                  осуществление координации деятельности работников
-                  учебно-методического кабинета;
-                </li>
-                <li class="list__item">
-                  участие в развитии и укреплении учебно-материальной базы
-                  образовательной организации, оснащении современным
-                  оборудованием, учебной литературой, пособиями и техническими
-                  средствами обучения;
-                </li>
-                <li class="list__item">
-                  организация и проведение учебно-методических семинаров
-                  (совещаний, конференций) и иных мероприятий;
-                </li>
-                <li class="list__item">
-                  обеспечение своевременного составления установленной отчетной
-                  документации;
-                </li>
-                <li class="list__item">
-                  разработка локальных актов учреждения;
-                </li>
-                <li class="list__item">
-                  составление перспективного план развития и работы кабинета на
-                  текущий учебный год, ведение контроля за выполнением данных
-                  планов;
-                </li>
-                <li class="list__item">
-                  разработка рекомендаций, форм документов, согласование с
-                  учебным отделом форм и образцов учебной документации для
-                  проведения всех видов занятий;
-                </li>
-                <li class="list__item">обобщение педагогического опыта;</li>
-                <li class="list__item">
-                  методическое сопровождение процедуры аттестации педагогических
-                  работников.
-                </li>
-              </ul>
+              <div class="experience-list__container">
+                <div>
+                  <p class="experience-list__subtitle">
+                    <strong>Должность</strong>
+                  </p>
+                  <p class="text text--experience">
+                    Заведующий методическим кабинетом
+                  </p>
+                </div>
+                <div class="experience-list__tasks">
+                  <p class="experience-list__subtitle">
+                    <strong>Задачи:</strong>
+                  </p>
+                  <ul class="experience-list__tasks-list list">
+                    <li class="list__item">
+                      организация текущего и перспективного планирования
+                      деятельности учебно-методического кабинета с учетом ее
+                      целей, задач и направлений;
+                    </li>
+                    <li class="list__item">
+                      осуществление координации деятельности работников
+                      учебно-методического кабинета;
+                    </li>
+                    <li class="list__item">
+                      участие в развитии и укреплении учебно-материальной базы
+                      образовательной организации, оснащении современным
+                      оборудованием, учебной литературой, пособиями и
+                      техническими средствами обучения;
+                    </li>
+                    <li class="list__item">
+                      организация и проведение учебно-методических семинаров
+                      (совещаний, конференций) и иных мероприятий;
+                    </li>
+                    <li class="list__item">
+                      обеспечение своевременного составления установленной
+                      отчетной документации;
+                    </li>
+                    <li class="list__item">
+                      разработка локальных актов учреждения;
+                    </li>
+                    <li class="list__item">
+                      составление перспективного план развития и работы кабинета
+                      на текущий учебный год, ведение контроля за выполнением
+                      данных планов;
+                    </li>
+                    <li class="list__item">
+                      разработка рекомендаций, форм документов, согласование с
+                      учебным отделом форм и образцов учебной документации для
+                      проведения всех видов занятий;
+                    </li>
+                    <li class="list__item">обобщение педагогического опыта;</li>
+                    <li class="list__item">
+                      методическое сопровождение процедуры аттестации
+                      педагогических работников.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="experience-list__item">
-              <h3 class="experience-list__title title title--info">
-                9 января 2017 года →<br class="br" />
-                1 февраля 2017 года
+              <h3
+                class="experience-list__title title title--info title--info-dates"
+              >
+                <p class="experience-list__title-first-date">
+                  9 января 2017 года
+                  <span class="experience-list__title-arrow"></span>
+                </p>
+                <span>1 февраля 2017 года</span>
               </h3>
-              <p><strong>Должность</strong></p>
-              <p>Методист</p>
-              <p><strong>Задачи:</strong></p>
-              <ul class="experience-list__tasks-list list">
-                <li class="list__item">
-                  анализ состояния учебно-методической работы в учебном
-                  заведении;
-                </li>
-                <li class="list__item">
-                  разработка методических и информационных материалов;
-                </li>
-                <li class="list__item">
-                  оказание помощи педагогическим работникам учреждения в
-                  разработке учебно-методической документации;
-                </li>
-                <li class="list__item">
-                  разработка необходимой документации по проведению конкурсов,
-                  выставок;
-                </li>
-                <li class="list__item">
-                  участие в разработке издания учебных материалов, методических
-                  пособий;
-                </li>
-                <li class="list__item">
-                  разработка локальных актов учреждения.
-                </li>
-              </ul>
+              <div class="experience-list__container">
+                <div>
+                  <p class="experience-list__subtitle">
+                    <strong>Должность</strong>
+                  </p>
+                  <p class="text text--experience">Методист</p>
+                </div>
+                <div class="experience-list__tasks">
+                  <p class="experience-list__subtitle">
+                    <strong>Задачи:</strong>
+                  </p>
+                  <ul class="experience-list__tasks-list list">
+                    <li class="list__item">
+                      анализ состояния учебно-методической работы в учебном
+                      заведении;
+                    </li>
+                    <li class="list__item">
+                      разработка методических и информационных материалов;
+                    </li>
+                    <li class="list__item">
+                      оказание помощи педагогическим работникам учреждения в
+                      разработке учебно-методической документации;
+                    </li>
+                    <li class="list__item">
+                      разработка необходимой документации по проведению
+                      конкурсов, выставок;
+                    </li>
+                    <li class="list__item">
+                      участие в разработке издания учебных материалов,
+                      методических пособий;
+                    </li>
+                    <li class="list__item">
+                      разработка локальных актов учреждения.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="experience-list__item">
-              <h3 class="experience-list__title title title--info">
-                10 марта 2015 года →<br class="br" />
-                16 декабря 2016 года
+              <h3
+                class="experience-list__title title title--info title--info-dates"
+              >
+                <p class="experience-list__title-first-date">
+                  10 марта 2015 года
+                  <span class="experience-list__title-arrow"></span>
+                </p>
+                <span>16 декабря 2016 года</span>
               </h3>
-              <p><strong>Должность</strong></p>
-              <p>Методист</p>
-              <p>Мастер производственного обучения</p>
-              <p><strong>Задачи:</strong></p>
-              <ul class="experience-list__tasks-list list">
-                <li class="list__item">
-                  проведение практических занятий, учебной практики по
-                  специальности 42.02.02 издательское дело;
-                </li>
-                <li class="list__item">
-                  разработка учебно-методической документации: технологические
-                  карты занятий, конспект занятий, методические рекомендации по
-                  организации самостоятельной работы студентов, методические
-                  рекомендации;
-                </li>
-                <li class="list__item">
-                  по подготовке к практическим занятиям, фонды оценочных средств
-                  по профессиональному модулю.
-                </li>
-              </ul>
+              <div class="experience-list__container">
+                <div>
+                  <p class="experience-list__subtitle">
+                    <strong>Должность</strong>
+                  </p>
+                  <p class="text text--experience">Методист</p>
+                  <p class="text text--experience">
+                    Мастер производственного обучения
+                  </p>
+                </div>
+                <div class="experience-list__tasks">
+                  <p class="experience-list__subtitle">
+                    <strong>Задачи:</strong>
+                  </p>
+                  <ul class="experience-list__tasks-list list">
+                    <li class="list__item">
+                      проведение практических занятий, учебной практики по
+                      специальности 42.02.02 издательское дело;
+                    </li>
+                    <li class="list__item">
+                      разработка учебно-методической документации:
+                      технологические карты занятий, конспект занятий,
+                      методические рекомендации по организации самостоятельной
+                      работы обучающихся, методические рекомендации по
+                      подготовке к практическим занятиям, фонды оценочных
+                      средств по профессиональному модулю.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="experience-list__item">
-              <h3 class="experience-list__title title title--info">
-                20 февраля 2012 года →<br class="br" />
-                29 августа 2014 года
+              <h3
+                class="experience-list__title title title--info title--info-dates"
+              >
+                <p class="experience-list__title-first-date">
+                  20 февраля 2012 года
+                  <span class="experience-list__title-arrow"></span>
+                </p>
+                <span>29 августа 2014 года</span>
               </h3>
-              <p><strong>Должность</strong></p>
-              <p>Методист</p>
+              <div class="experience-list__container">
+                <div>
+                  <p class="experience-list__subtitle">
+                    <strong>Должность</strong>
+                  </p>
+                  <p class="text text--experience">Методист</p>
+                </div>
+              </div>
             </li>
           </ul>
         </section>
@@ -486,7 +630,7 @@
       </div>
     </footer>
 
-    <button class="body__up-button button" type="button">
+    <button class="body__up-button button link" type="button">
       <svg
         class="body__up-button-icon"
         xmlns="http://www.w3.org/2000/svg"
@@ -495,6 +639,7 @@
         viewBox="0 0 24 24"
         width="24"
         height="24"
+        fill="#e98b3f"
       >
         <path
           d="M18.079,6L12.996,.445c-.532-.593-1.461-.593-1.993,0L5.921,6h4.579V24h3V6h4.579Z"
@@ -502,5 +647,6 @@
       </svg>
       <span class="visually-hidden">Вернуться к началу</span>
     </button>
+    <script src="js/up-button.js"></script>
   </body>
 </html>

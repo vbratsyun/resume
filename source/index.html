@@ -10,36 +10,35 @@
   </head>
   <body class="page__body body">
     <header class="body__header header">
-      <!-- <div class="header__wrapper"> -->
         <nav class="header__nav nav">
           <ul class="nav__list nav-list list">
             <li class="nav-list__item">
-              <a class="nav-list__link nav-list__link--start">Главная</a>
+              <a class="nav-list__link link">Главная</a>
             </li>
             <li class="nav-list__item">
               <a
-                class="nav-list__link nav-list__link--about-me link"
+                class="nav-list__link link"
                 href="info.html#about-me"
                 >О себе</a
               >
             </li>
             <li class="nav-list__item">
               <a
-                class="nav-list__link nav-list__link--education link"
+                class="nav-list__link link"
                 href="info.html#education"
                 >Образование</a
               >
             </li>
             <li class="nav-list__item">
               <a
-                class="nav-list__link nav-list__link--skills link"
+                class="nav-list__link link"
                 href="info.html#skills"
                 >Навыки</a
               >
             </li>
             <li class="nav-list__item">
               <a
-                class="nav-list__link nav-list__link--experience link"
+                class="nav-list__link link"
                 href="info.html#experience"
                 >Опыт работы</a
               >
@@ -47,7 +46,7 @@
           </ul>
         </nav>
         <div class="header__container"></div>
-        <button class="header__button button" type="button">
+        <button class="header__button button link header__button--transform" type="button">
           <svg
             class="header__button-arrow"
             role="presentation"
@@ -65,7 +64,6 @@
           </svg>
           <span class="visually-hidden">Посмотреть информацию ниже</span>
         </button>
-      <!-- </div> -->
     </header>
     <main class="body__main main">
       <h1 class="visually-hidden">Резюме html-верстальщика Брацюн Виктории</h1>
@@ -87,11 +85,14 @@
               <option class="sorting-type__option" value="test">
                 тестовые
               </option>
+              <option class="sorting-type__option" value="all" selected>
+                все проекты
+              </option>
             </select>
           </form>
         </div>
         <ul class="portfolio__sorting-list sorting-list list">
-          <li class="sorting-list__item sorting-list__item--marron">
+          <li class="sorting-list__item sorting-list__item--marron" data-category="test">
             <a
               class="sorting-list__link link"
               href="https://vbratsyun.github.io/maroon-shop/"
@@ -150,7 +151,7 @@
               </p>
             </a>
           </li>
-          <li class="sorting-list__item sorting-list__item--kasmir">
+          <li class="sorting-list__item sorting-list__item--kasmir"  data-category="test">
             <a
               class="sorting-list__link link"
               href="https://vbratsyun.github.io/Barbershop/"
@@ -209,7 +210,7 @@
               </p>
             </a>
           </li>
-          <li class="sorting-list__item sorting-list__item--spshop">
+          <li class="sorting-list__item sorting-list__item--spshop"  data-category="test">
             <a
               class="sorting-list__link link"
               href="https://vbratsyun.github.io/SP.shop/"
@@ -268,7 +269,7 @@
               </p>
             </a>
           </li>
-          <li class="sorting-list__item sorting-list__item--gussi">
+          <li class="sorting-list__item sorting-list__item--gussi"  data-category="test">
             <a
               class="sorting-list__link link"
               href="https://vbratsyun.github.io/gussi/"
@@ -327,7 +328,7 @@
               </p>
             </a>
           </li>
-          <li class="sorting-list__item sorting-list__item--mishka">
+          <li class="sorting-list__item sorting-list__item--mishka"  data-category="educational">
             <a
               class="sorting-list__link link"
               href="https://vbratsyun.github.io/Mishka/"
@@ -386,8 +387,7 @@
               </p>
             </a>
           </li>
-
-          <li class="sorting-list__item sorting-list__item--global">
+          <li class="sorting-list__item sorting-list__item--global" data-category="test">
             <a
               class="sorting-list__link link"
               href="https://vbratsyun.github.io/Global/"
@@ -444,8 +444,7 @@
               <p class="sorting-list__title title">Колл-центр сайта "Global"</p>
             </a>
           </li>
-
-          <li class="sorting-list__item sorting-list__item--device">
+          <li class="sorting-list__item sorting-list__item--device" data-category="educational">
             <a
               class="sorting-list__link link"
               href="https://vbratsyun.github.io/1890797-device-32/"
@@ -501,7 +500,7 @@
               <p class="sorting-list__title title">Интернет-магазин "Device"</p>
             </a>
           </li>
-          <li class="sorting-list__item sorting-list__item--cat-energy">
+          <li class="sorting-list__item sorting-list__item--cat-energy" data-category="educational">
             <a
               class="sorting-list__link link"
               href="https://vbratsyun.github.io/CatEnergy/"
@@ -560,8 +559,7 @@
               </p>
             </a>
           </li>
-
-          <li class="sorting-list__item sorting-list__item--sedona">
+          <li class="sorting-list__item sorting-list__item--sedona" data-category="educational">
             <a
               class="sorting-list__link link"
               href="https://vbratsyun.github.io/1890797-sedona-24/"
@@ -620,7 +618,7 @@
               </p>
             </a>
           </li>
-          <li class="sorting-list__item sorting-list__item--offerrum">
+          <li class="sorting-list__item sorting-list__item--offerrum" data-category="test">
             <a
               class="sorting-list__link link"
               href="https://vbratsyun.github.io/OFFERRUM/"
@@ -679,7 +677,7 @@
               </p>
             </a>
           </li>
-          <li class="sorting-list__item sorting-list__item--pink">
+          <li class="sorting-list__item sorting-list__item--pink" data-category="educational">
             <!-- доделать проект -->
             <a
               class="sorting-list__link link"
@@ -732,12 +730,11 @@
               </picture>
 
               <p class="sorting-list__title title">
-                Сайт фотоприложения для раскрашивания серых будней "Pink"
+                Сайт фотоприложения "Pink" для раскраски будней
               </p>
             </a>
           </li>
-
-          <li class="sorting-list__item sorting-list__item--kekstagram">
+          <li class="sorting-list__item sorting-list__item--kekstagram" data-category="educational">
             <a
               class="sorting-list__link link"
               href="https://vbratsyun.github.io/1890797-kekstagram-28/"
@@ -862,7 +859,7 @@
         </address>
       </div>
     </footer>
-    <button class="body__up-button button" type="button">
+    <button class="body__up-button button link" type="button">
       <svg
         class="body__up-button-icon"
         xmlns="http://www.w3.org/2000/svg"
@@ -871,6 +868,7 @@
         viewBox="0 0 24 24"
         width="24"
         height="24"
+        fill="#e98b3f"
       >
         <path
           d="M18.079,6L12.996,.445c-.532-.593-1.461-.593-1.993,0L5.921,6h4.579V24h3V6h4.579Z"
@@ -878,5 +876,8 @@
       </svg>
       <span class="visually-hidden">Вернуться к началу</span>
     </button>
+    <script src="js/header-button.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/up-button.js"></script>
   </body>
 </html>

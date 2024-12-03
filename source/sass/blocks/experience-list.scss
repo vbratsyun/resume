@@ -4,13 +4,55 @@
   gap: 30px;
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+}
+
+.experience-list__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  // padding: 10px;
+  // border-radius: 7px;
+
+  // &:nth-of-type(odd) {
+  //   background-color: rgba(211, 211, 211, 0.14);
+  // }
+  @media (min-width: $tablet-width) {
+    text-indent: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
   }
 }
 
 .experience-list__title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.experience-list__title-first-date {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+}
+
+.experience-list__title-arrow {
+  width: 20px;
+  height: 20px;
+  background: url("../image/arrow-right.svg") no-repeat;
+  background-size: contain;
+}
+
+.experience-list__subtitle {
+  margin: 0 0 10px;
 }
 
 .experience-list__tasks-list,
@@ -25,4 +67,29 @@
   font-weight: 500;
   color: $text-black-color;
   text-indent: 1rem;
+
+  @media(min-width: $tablet-width) {
+    text-indent: 0;
+  }
+}
+
+.experience-list__container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.experience-list__tasks {
+  @media (min-width: $desktop-width) {
+    grid-column: 2/-1;
+  }
 }

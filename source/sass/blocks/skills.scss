@@ -9,10 +9,15 @@
   flex-direction: column;
   gap: 10px;
   list-style-position: inside;
+  flex-wrap: wrap;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
   }
+
+  // @media (min-width: $desktop-width) {
+  //   flex-direction: row;
+  // }
 }
 
 .skills__text {

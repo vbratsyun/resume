@@ -6,10 +6,19 @@
   margin: 0 0 20px;
 
   &--info {
+    margin: 20px 1rem;
     filter: drop-shadow(2px 2px 10px #474242);
   }
 
   @media (min-width: 768px) {
     margin: 0 0 40px;
+
+    &--info {
+      margin: 30px 0 30px;
+    }
+
+    &--info-dates {
+      margin: 0 0 20px;
+    }
   }
 }
