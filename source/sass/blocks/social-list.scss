@@ -35,3 +35,9 @@
     }
   }
 }
+
+.social-list__link .social-list__icon {
+  &:active {
+    fill: #e98b3f;
+  }
+}

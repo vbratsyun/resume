@@ -1,16 +1,14 @@
 .about-me {
-  padding-top: 20px;
+  // padding-top: 20px;
 }
 
-.about-me__link {
+.about-me__avatar {
   display: block;
-  float: right;
+  float: left;
   width: 110px;
   height: 110px;
   border-radius: 50%;
-  // border: 1px solid $white-text;
-  // outline: 3px solid #bfdd5c;
-  margin: 0 6px;
+  margin: 30px 13px;
   background: url("../image/decorative-images/avatar.jpg") no-repeat;
   background-size: contain;
   background-position: 50% 36%;
@@ -24,6 +22,11 @@
   @media (min-width: $tablet-width) {
     width: 150px;
     height: 150px;
-    margin: 0;
+    margin: 10px 20px;
   }
+}
+
+
+.about-me__link {
+  font-weight: 500;
 }

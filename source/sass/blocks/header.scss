@@ -5,22 +5,14 @@
   justify-content: space-between;
   width: 100%;
   height: 100vh;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
   &--info {
     height: 100%;
   }
 }
 
-// .header__wrapper {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-//   height: 100%;
-// }
-
 .header__container {
-  // position: relative;
   width: 100%;
   height: 100%;
   background: url("../image/decorative-images/index-background-mobile.png")
@@ -65,12 +57,16 @@
 }
 
 .header__button {
-  // position: absolute;
-  // left: 0;
-  // right: 0;
-  // bottom: 0;
+  padding: 5px;
+  transition: transform 0.7s;
   filter: drop-shadow(2px 2px 10px #808080);
+
+  &--transform {
+    transform: translateY(-15px);
+  }
 }
+
+
 
 .header__button-arrow {
   fill: $text-black-color;
