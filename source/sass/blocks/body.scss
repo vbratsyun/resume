@@ -24,12 +24,15 @@
   box-shadow: 2px 2px 10px #e98b3f;
   cursor: pointer;
 
-
   &--show {
     display: block;
   }
 
   @media (min-width: $tablet-width) {
     right: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 10px;
   }
 }
