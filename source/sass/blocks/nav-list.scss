@@ -33,6 +33,10 @@
   filter: drop-shadow(2px 2px 10px #808080);
 
   @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
     font-size: 22px;
   }
 }
