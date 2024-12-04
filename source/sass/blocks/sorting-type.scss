@@ -5,15 +5,11 @@
 }
 
 .sorting-type__select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   font-family: inherit;
   font-size: 17px;
   font-weight: inherit;
   padding: 5px 30px 5px 10px;
-  background-color: transparent;
-  // border-color: $title-color;
   outline: none;
   border-radius: 7px;
   background: url("../image/select-arrow.svg") no-repeat;

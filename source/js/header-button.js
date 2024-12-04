@@ -1,22 +1,21 @@
-const button = document.querySelector('.header__button');
-const portfolio = document.querySelector('.portfolio');
+const button = document.querySelector(".header__button");
+const portfolio = document.querySelector(".portfolio");
 
 let timer;
 
 const onArrowClick = () => {
-
-    portfolio.scrollIntoView({
-        behavior: "smooth", 
-        block: "start", 
-        inline: "start"
-    });
-  };
+  portfolio.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+    inline: "start",
+  });
+};
 
 const onWindowLoad = () => {
-    timer = setInterval(() => {
-        button.classList.toggle("header__button--transform");
-        button.addEventListener("click", onArrowClick);
-      }, 600);
-}
+  timer = setInterval(() => {
+    button.classList.toggle("header__button--transform");
+    button.addEventListener("click", onArrowClick);
+  }, 600);
+};
 
-window.addEventListener('load', onWindowLoad);
+window.addEventListener("load", onWindowLoad);
